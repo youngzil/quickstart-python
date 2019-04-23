@@ -20,6 +20,7 @@ pip3 list 显示已安装了哪些软件包
 pip3 search 在pypi上模糊搜索软件包等等…
 
 
+查看系统参数配置
 python -m site
 
 
@@ -42,8 +43,8 @@ pip show 软件包名
 显示本地软件包
 pip list
 
-Python3查看pip安装的软件包及版本
-python3 -m pip list
+查看pip安装的软件包及版本
+pip list
 
 
 导出本地所有软件包名和版本号
