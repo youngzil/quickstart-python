@@ -3,7 +3,17 @@ http://www.runoob.com/python/python-tutorial.html
 
 Python 可以使用 -h 参数查看各参数帮助信息
 
+
+
+下载安装包或者
+brew install python
+
+
+which python
+
+
 python -V
+python --version
 
 在 python 中，类型属于对象，变量是没有类型的：
 可以给一个变量任意类型的对象
