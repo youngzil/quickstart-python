@@ -1,22 +1,46 @@
-1、Python安装
-2、
-3、
-4、
-5、
-6、
+https://www.python.org/
+https://www.python.org/doc/
 
 
----------------------------------------------------------------------------------------------------------------------
-Python安装
+教程链接
+http://www.runoob.com/python3/python3-tutorial.html
+http://www.runoob.com/python3/python3-class.html
+https://www.runoob.com/manual/pythontutorial3/docs/html/
 
-Unix & Linux 平台安装 Python:
-以下为在 Unix & Linux 平台上安装 Python 的简单步骤：
-打开 WEB 浏览器访问https://www.python.org/downloads/source/
-选择适用 于Unix/Linux 的源码压缩包。
-下载及解压压缩包。
-如果你需要自定义一些选项修改Modules/Setup
-执行 ./configure 脚本
-make && make install
+
+下载安装包或者
+brew install python3
+
+which python3
+python3 --version
+
+which python
+python -V
+python --version
+
+
+
+不同的安装方式，存放位置不同
+
+来源	python安装路径
+系统默认	/System/Library/Frameworks/Python.framework/Versions/2.7
+brew安装	/usr/local/Cellar/python
+官网pkg安装	/Library/Frameworks/Python.framework/Versions/2.7
+
+
+
+Linux安装
+
+以 Python3.6.1 版本为例：
+# tar -zxvf Python-3.6.1.tgz
+# cd Python-3.6.1
+# ./configure
+# make && make install
+检查 Python3 是否正常可用：
+
+# python3 -V
+Python 3.6.1
+
 执行以上操作后，Python 会安装在 /usr/local/bin 目录中，Python 库安装在 /usr/local/lib/pythonXX，XX 为你使用的 Python 的版本号。
 
 
@@ -45,5 +69,3 @@ $ python # Unix/Linux
 $ python script.py # Unix/Linux
 
 
-
----------------------------------------------------------------------------------------------------------------------
