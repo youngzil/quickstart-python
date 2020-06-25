@@ -20,3 +20,6 @@ python3 --version
 系统默认	/System/Library/Frameworks/Python.framework/Versions/2.7
 brew安装	/usr/local/Cellar/python
 官网pkg安装	/Library/Frameworks/Python.framework/Versions/2.7
+
+
+
