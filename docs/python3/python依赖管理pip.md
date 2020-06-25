@@ -7,10 +7,16 @@ pip --version
 
 
 Python3
+pip3 -V
 pip3 --version
-
-
 pip3 help
+
+更新pip
+python -m pip install --upgrade pip
+
+更新setuptools
+pip install --upgrade setuptools
+
 
 
 pip3 install 安装软件包

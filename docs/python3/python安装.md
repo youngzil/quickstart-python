@@ -2,12 +2,6 @@ https://www.python.org/
 https://www.python.org/doc/
 
 
-教程链接
-http://www.runoob.com/python3/python3-tutorial.html
-http://www.runoob.com/python3/python3-class.html
-https://www.runoob.com/manual/pythontutorial3/docs/html/
-
-
 下载安装包或者
 brew install python3
 
