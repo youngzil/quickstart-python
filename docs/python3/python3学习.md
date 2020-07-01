@@ -1,9 +1,16 @@
 Python官网和教程
 运行Python有三种方式可以运行Python
+Python: 创建空的list,以及append用法
+Python将多个list合并为1个list
+Python 列表(List) 的三种遍历(序号和值)方法
+Python3类型转换指南
+Python对象和Json转换
+字段按照key或Value排序
 
 
 待看
 https://www.runoob.com/python3/python3-reg-expressions.html
+
 
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -17,6 +24,33 @@ https://www.python.org/doc/
 https://www.runoob.com/python3/python3-tutorial.html
 http://www.runoob.com/python3/python3-class.html
 https://www.runoob.com/manual/pythontutorial3/docs/html/
+
+Python: 创建空的list,以及append用法
+参考
+https://blog.csdn.net/u012486361/article/details/77073020
+
+Python将多个list合并为1个list
+参考
+ListTest.py
+
+Python 列表(List) 的三种遍历(序号和值)方法
+参考
+https://www.cnblogs.com/pizitai/p/6398276.html
+
+Python3类型转换指南
+参考
+https://www.cnblogs.com/shockerli/p/python3-data-type-convert.html
+
+Python对象和Json转换
+参考
+https://blog.csdn.net/tterminator/article/details/63289400
+
+
+字段按照key或Value排序
+参考
+https://blog.csdn.net/asialee_bird/article/details/79675802
+https://www.cnblogs.com/xyao1/p/11022127.html
+
 
 
 ---------------------------------------------------------------------------------------------------------------------
