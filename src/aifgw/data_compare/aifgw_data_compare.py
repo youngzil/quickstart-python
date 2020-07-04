@@ -74,8 +74,8 @@ for areaCode, redisConnect in redis_dict.items():
             apiAppDataDict = json.loads(apiAppData)
             appCode = apiAppDataDict["appCode"]
             appData = redisConnect.get("AppInfo" + SPLIT_CHAR + appCode)
-            print(env_name + areaCode + " Redis应用配置:", appData)
-            print(env_name + areaCode + " Redis应用接口关联配置:", apiAppData)
+            print(env_name + areaCode + " Redis应用配置:\n", appData)
+            print(env_name + areaCode + " Redis应用接口关联配置:\n", apiAppData)
 
             apiAppDataList.append(apiAppDataDict)
             if appData:
@@ -99,7 +99,7 @@ print(apiVersions)
 
 for areaCode, redisConnect in redis_dict.items():
     apiVersionData = redisConnect.get("ApiVersion" + SPLIT_CHAR + apiCode + SPLIT_CHAR + apiVersion)
-    print(env_name + areaCode + " Redis接口版本:" + apiVersionData)
+    print(env_name + areaCode + " Redis接口版本:\n" + apiVersionData)
 
 apiParamIns = ApiParamInfo(cur).getData(apiCode, apiVersion, "IN")
 print(env_name + "DB接口版本参数(IN)：")
@@ -107,7 +107,7 @@ print(apiParamIns)
 
 for areaCode, redisConnect in redis_dict.items():
     apiParamInData = redisConnect.keys("ApiParam" + SPLIT_CHAR + apiCode + SPLIT_CHAR + apiVersion + SPLIT_CHAR + "IN")
-    print(env_name + areaCode + " Redis接口版本参数(IN):" + str(apiParamInData))
+    print(env_name + areaCode + " Redis接口版本参数(IN):\n" + str(apiParamInData))
 
 apiParamOuts = ApiParamInfo(cur).getData(apiCode, apiVersion, "OUT")
 print(env_name + "DB接口版本参数(OUT)：")
@@ -116,7 +116,7 @@ print(apiParamOuts)
 for areaCode, redisConnect in redis_dict.items():
     apiParamOutData = redisConnect.keys(
         "ApiParam" + SPLIT_CHAR + apiCode + SPLIT_CHAR + apiVersion + SPLIT_CHAR + "OUT")
-    print(env_name + areaCode + " Redis接口版本参数(OUT):" + str(apiParamOutData))
+    print(env_name + areaCode + " Redis接口版本参数(OUT):\n" + str(apiParamOutData))
 
 apiRoutes = ApiRouteInfo(cur).getData(apiCode, apiVersion)
 print(env_name + "DB接口路由信息：")

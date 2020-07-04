@@ -17,7 +17,7 @@ class Config():
         'port': 3306,
         'database': 'aifgwtest',
         'user': 'root',
-        'password': 'XXX',
+        'password': 'root',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,

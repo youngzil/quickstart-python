@@ -5,19 +5,19 @@ from rediscluster import RedisCluster
 
 
 class Config():
-    env_name = '新业务测试环境'
+    env_name = '项目测试环境'
     env_code = "test"
 
-    sd_nodes = [{"host": "20.26.103.195", "port": "6601"}]
-    sq_nodes = [{"host": "20.26.103.198", "port": "6601"}]
-    redis_cluster_dict = {"xyw_sd": sd_nodes, "xyw_sq": sq_nodes}
+    sd_nodes = [{"host": "20.26.37.179", "port": "28001"}]
+    sq_nodes = [{"host": "20.26.103.195", "port": "6601"}]
+    redis_cluster_dict = {"xm_sd": sd_nodes, "xm_sq": sq_nodes}
 
     mysql_config = {
-        'host': '20.26.103.29',
+        'host': '20.26.103.149',
         'port': 3306,
         'database': 'aifgwtest',
-        'user': 'aiosp_cfg',
-        'password': 'XXXX#123',
+        'user': 'aifgwtest',
+        'password': 'Aifgwtest#123',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,

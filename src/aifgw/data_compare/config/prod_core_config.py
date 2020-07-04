@@ -17,7 +17,7 @@ class Config():
         'port': 7001,
         'database': 'aiosp_cfg',
         'user': 'aiosp_cfg',
-        'password': 'XXX',
+        'password': 'aiosp_cfg',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,
@@ -32,7 +32,7 @@ class Config():
             # redis connect
             # Requires at least one node for cluster discovery. Multiple nodes is recommended.
             # Note: decode_responses must be set to True when used with python3
-            rc = RedisCluster(startup_nodes=value, max_connections=200, decode_responses=True, password='XXX=')
+            rc = RedisCluster(startup_nodes=value, max_connections=200, decode_responses=True, password='cmVkaXM=')
             cur_dict[key] = rc
         return cur_dict
 

@@ -5,19 +5,19 @@ from rediscluster import RedisCluster
 
 
 class Config():
-    env_name = '项目测试环境'
+    env_name = '新业务测试环境'
     env_code = "test"
 
-    sd_nodes = [{"host": "10.76.224.228", "port": "6301"}]
-    sq_nodes = [{"host": "10.78.134.70", "port": "6201"}]
-    redis_cluster_dict = {"prod_dmz_sd": sd_nodes, "prod_dmz_sq": sq_nodes}
+    sd_nodes = [{"host": "20.26.103.195", "port": "6601"}]
+    sq_nodes = [{"host": "20.26.103.198", "port": "6601"}]
+    redis_cluster_dict = {"xyw_sd": sd_nodes, "xyw_sq": sq_nodes}
 
     mysql_config = {
-        'host': '10.76.224.65',
-        'port': 7001,
-        'database': 'aiosp_cfg',
+        'host': '20.26.103.29',
+        'port': 3306,
+        'database': 'aifgwtest',
         'user': 'aiosp_cfg',
-        'password': 'XXX',
+        'password': 'Aiosp_cfg#123',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,
@@ -31,8 +31,7 @@ class Config():
         for key, value in slef.redis_cluster_dict.items():
             # redis connect
             # Requires at least one node for cluster discovery. Multiple nodes is recommended.
-            # Note: decode_responses must be set to True when used with python3
-            rc = RedisCluster(startup_nodes=value, max_connections=200, decode_responses=True, password='XXXX=')
+            rc = RedisCluster(startup_nodes=value, max_connections=200, decode_responses=True)
             cur_dict[key] = rc
         return cur_dict
 
