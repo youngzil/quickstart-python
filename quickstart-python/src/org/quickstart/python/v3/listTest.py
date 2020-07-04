@@ -1,4 +1,39 @@
 # !/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+# 1、创建
+# 2、增删改查
+# 3、遍历
+# tuple、list、set互相转换
+
+# Python列表截取与拼接
+# Python的列表截取与字符串操作类型，如下所示：
+# L=['Google', 'Runoob', 'Taobao']
+# Python 表达式	结果	描述
+# L[2]	'Taobao'	读取第三个元素
+# L[-2]	'Runoob'	从右侧开始读取倒数第二个元素: count from the right
+# L[1:]	['Runoob', 'Taobao']	输出从第二个元素开始后的所有元素
+
+
+# list.append(obj) 在列表末尾添加新的对象
+# list.count(obj) 统计某个元素在列表中出现的次数
+# list.extend(seq) 在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）
+# list.index(obj) 从列表中找出某个值第一个匹配项的索引位置
+# list.insert(index, obj) 将对象插入列表
+# list.pop([index=-1]) 移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
+# list.remove(obj) 移除列表中某个值的第一个匹配项
+# list.reverse() 反向列表中元素
+# list.sort( key=None, reverse=False) 对原列表进行排序
+# list.clear() 清空列表
+# list.copy() 复制列表
+
+
+# List（列表）
+empty_list = []
+list1 = ['Google', 'Runoob', 1997, 2000]
+list2 = [1, 2, 3, 4, 5]
+list3 = ["a", "b", "c", "d"]
 
 # Python中list的用法：如何创建list，如何表达list中的元素，如何修改和删除list
 # 0.空list的创建：

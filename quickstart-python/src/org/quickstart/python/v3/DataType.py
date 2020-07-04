@@ -1,16 +1,53 @@
 # !/usr/bin/python3
 
+# 不可变数据（3 个）：Number（数字）、String（字符串）、Tuple（元组）；
+# 可变数据（3 个）：List（列表）、Dictionary（字典）、Set（集合）。
 
-counter = 100          # 整型变量
-miles   = 1000.0       # 浮点型变量
-name    = "runoob"     # 字符串
+# 创建
+# Number（数字）、String（字符串）
+counter = 100  # 整型变量
+miles = 1000.0  # 浮点型变量
+name = "runoob"  # 字符串
 
-print (counter)
-print (miles)
-print (name)
+# Tuple（元组）
+empty_tuple = ()
+tup01 = tuple('Google', 'Runoob', 1997, 2000)
+print(empty_tuple)
+print(tup01)
 
+tup1 = ('Google', 'Runoob', 1997, 2000)
+tup2 = (1, 2, 3, 4, 5)
+tup3 = "a", "b", "c", "d"  # 不需要括号也可以
 
-a, b, c, d = 20, 5.5, True, 4+3j
+# List（列表）
+empty_list = []
+list1 = ['Google', 'Runoob', 1997, 2000]
+list2 = [1, 2, 3, 4, 5]
+list3 = ["a", "b", "c", "d"]
+
+# Set（集合）
+# 创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。
+empty_set = set()
+set1 = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+set2 = set('abracadabra')
+
+# Dictionary（字典）
+empty_dict = {}
+dict = {'Name': 'Runoob', 'Age': 7, 'Class': 'First'}
+dict1 = {'abc': 456}
+dict2 = {'abc': 123, 98.6: 37}
+print("Name: ", dict['Name'])
+print("Age: ", dict['Age'])
+
+counter = 100  # 整型变量
+miles = 1000.0  # 浮点型变量
+name = "runoob"  # 字符串
+
+print(counter)
+print(miles)
+print(name)
+
+a, b, c, d = 20, 5.5, True, 4 + 3j
 print(type(a), type(b), type(c), type(d))
 print(isinstance(a, int))
 
@@ -42,8 +79,10 @@ print(r'hello\nrunoob')  # 在字符串前面添加一个 r，表示原始字符
 dd = input("\n\n按下 enter 键后退出。")
 print(dd)
 
+import sys;
 
-import sys; x = 'runoob'; sys.stdout.write(x + '\n')
+x = 'runoob';
+sys.stdout.write(x + '\n')
 
 x = "a"
 y = "b"
@@ -57,15 +96,16 @@ print(x, end=" ")
 print(y, end=" ")
 print()
 
-
 import sys
+
 print('================Python import mode==========================')
-print ('命令行参数为:')
+print('命令行参数为:')
 for i in sys.argv:
-    print (i)
-print ('\n python 路径为',sys.path)
+    print(i)
+print('\n python 路径为', sys.path)
 
 from sys import argv, path  # 导入特定的成员
+
 print('================python from import===================================')
 print('path:', path)  # 因为已经导入path成员，所以此处引用时不需要加sys.path
 
@@ -73,7 +113,7 @@ print("-----------------------------")
 # 在字典中遍历时，关键字和对应的值可以使用 items() 方法同时解读出来：
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 for k, v in knights.items():
-    print(k+"="+v)
+    print(k + "=" + v)
 
 print("---------------")
 # 在序列中遍历时，索引位置和对应值可以使用 enumerate() 函数同时得到：
@@ -87,7 +127,6 @@ answers = ['lancelot', 'the holy grail', 'blue']
 for q, a in zip(questions, answers):
     print('What is your {0}?  It is {1}.'.format(q, a))
 
-
 print("---------------")
 # 要反向遍历一个序列，首先指定这个序列，然后调用 reversed() 函数：
 for i in reversed(range(1, 10, 2)):
@@ -98,5 +137,3 @@ print("---------------")
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 for f in sorted(set(basket)):
     print(f)
-
-

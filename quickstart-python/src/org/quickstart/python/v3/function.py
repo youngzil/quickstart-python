@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+
+# 加了星号 * 的参数会以元组(tuple)的形式导入，存放所有未命名的变量参数。
+# 加了两个星号 ** 的参数会以字典的形式导入。
+
+
 # 计算面积函数
 def area(width, height):
     return width * height
@@ -21,6 +26,7 @@ def printme(str):
     print(str)
     return
 
+
 # 调用函数
 printme("我要调用用户自定义函数!")
 printme("再次调用同一函数")
@@ -32,6 +38,7 @@ def printinfo(name, age=35):
     print("名字: ", name)
     print("年龄: ", age)
     return
+
 
 # 调用printinfo函数
 printinfo(age=50, name="runoob")
@@ -50,6 +57,7 @@ def printinfo(arg1, *vartuple):
         print(var)
     return
 
+
 # 调用printinfo 函数
 print("------------------------")
 printinfo(10)
@@ -64,10 +72,10 @@ def printinfo(arg1, **vardict):
     print(arg1)
     print(vardict)
 
+
 # 调用printinfo 函数
 print("------------------------")
 printinfo(1, a=2, b=3)
-
 
 # python 使用 lambda 来创建匿名函数。
 # 可写函数说明
@@ -86,18 +94,18 @@ def sum(arg1, arg2):
     print("函数内 : ", total)
     return total
 
+
 # 调用sum函数
 total = sum(10, 20)
 print("函数外 : ", total)
+
 
 # 强制位置参数
 def f(a, b, /, c, d, *, e, f):
     print(a, b, c, d, e, f)
 
+
 f(10, 20, 30, d=40, e=50, f=60)
 
-f(10, b=20, c=30, d=40, e=50, f=60)   # b 不能使用关键字参数的形式
-f(10, 20, 30, 40, 50, f=60)           # e 必须使用关键字参数的形式
-
-
-
+f(10, b=20, c=30, d=40, e=50, f=60)  # b 不能使用关键字参数的形式
+f(10, 20, 30, 40, 50, f=60)  # e 必须使用关键字参数的形式

@@ -22,3 +22,8 @@ print(json_str)
 str = '{"listData": [1, 2, 3], "strData": "test python obj 2 json"}'
 json2python = json.loads(str)
 print(type(json2python))
+
+json2python2= json.load(str)
+
+
+
