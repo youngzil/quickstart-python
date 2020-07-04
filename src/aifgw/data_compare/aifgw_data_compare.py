@@ -1,4 +1,5 @@
 # !/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 import json
 import mysql.connector
@@ -9,6 +10,7 @@ import config.xyw_config
 import config.zfb_config
 import config.prod_core_config
 import config.prod_dmz_config
+import config.nj_config
 
 SPLIT_CHAR = ":"
 switch = {'1': config.xm_config.Config("gg"),  # 注意此处不要加括号
@@ -16,7 +18,8 @@ switch = {'1': config.xm_config.Config("gg"),  # 注意此处不要加括号
           '3': config.xyw_config.Config("gg"),  # 注意此处不要加括号
           '4': config.zfb_config.Config("gg"),  # 注意此处不要加括号
           '5': config.prod_core_config.Config("gg"),  # 注意此处不要加括号
-          '6': config.prod_dmz_config.Config("gg")  # 注意此处不要加括号
+          '6': config.prod_dmz_config.Config("gg"),  # 注意此处不要加括号
+          '7': config.nj_config.Config("gg")  # 注意此处不要加括号
           }
 
 print("""
@@ -28,6 +31,7 @@ print("""
 	4.准发布测试环境
 	5.生产内网环境
 	6.生产外网环境
+	7.南京测试环境
 """)
 
 choice = input("请输入环境序号:")  # 获取选择

@@ -1,7 +1,7 @@
-pip install redis
+pip3 install redis
 
 
 集群连接
-pip install redis-py-cluster
+pip3 install redis-py-cluster
 https://github.com/Grokzen/redis-py-cluster
 

@@ -54,10 +54,10 @@ pip list
 
 
 导出本地所有软件包名和版本号
-pip freeze > requirements.txt
+pip3 freeze > requirements.txt
 
 然后把requirements.txt文件拷贝到另一台机器上，运行如下命令：安装全部软件包
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 
 卸载指定的软件包命令是：

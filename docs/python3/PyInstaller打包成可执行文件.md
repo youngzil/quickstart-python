@@ -1,3 +1,7 @@
+http://www.pyinstaller.org/
+https://github.com/pyinstaller/pyinstaller
+
+
 PyInstaller打包成可执行文件
 
 1.安装PyInstaller
@@ -9,6 +13,12 @@ PyInstaller打包成可执行文件
   在和myscript.py同目录下执行命令：
 pyinstaller mycript.py然后会看到新增加了两个目录build和dist，dist下面的文件就是可以发布的可执行文件，
 你会发现dist目录下面有一堆文件，各种都动态库文件和myscrip可执行文件
+
+
+如果打包时指定参数为-p .打包出来的文件可以放在任意路径下运行，如下示例：
+pyinstaller -w -F -p . your.py
+
+pyinstaller -w -F -p . aifgw_data_compare.py
 
 pyInstaller支持单文件模式，只需要执行：
 pyinstaller -F mycript.py
@@ -29,7 +39,6 @@ pyinstaller -F mycript.py
 
 参考
 https://blog.csdn.net/u013896064/article/details/88552864
-
-
+https://ningyu1.github.io/site/post/59-py2exe-pyinstaller/
 
 

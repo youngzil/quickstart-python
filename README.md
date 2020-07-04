@@ -47,10 +47,8 @@ pytest是一个非常成熟的全功能的Python测试框架，主要特点有�
 5、测试用例的skip和xfail处理；
 6、可以很好的和CI工具结合，例如jenkins
 
-作者：红薯爱帅
-链接：https://www.jianshu.com/p/a754e3d47671
-来源：简书
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+参考
+https://www.jianshu.com/p/a754e3d47671
 
 
 

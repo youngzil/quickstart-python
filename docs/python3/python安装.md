@@ -63,3 +63,43 @@ $ python # Unix/Linux
 $ python script.py # Unix/Linux
 
 
+
+
+Linux安装
+
+在Centos7.4安装python3.7
+cd /usr/src
+wget https://www.python.org/ftp/python/3.7.7/Python-3.7.7.tgz
+tar xzf Python-3.7.7.tgz
+cd Python-3.7.7
+./configure --enable-optimizations
+make altinstall
+rm /usr/src/Python-3.7.7.tgz
+python3.7 -V
+
+如果出现make not found, just yum install make
+
+
+
+安装可能需要的依赖#
+yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel gcc gcc-c++  openssl-devel xorg-x11-xauth zlib* libffi-devel wget
+yum install gcc openssl-devel bzip2-devel libffi-devel
+
+解压#
+解压tar.xz使用 xz -d 命令解压出tar包
+xz -d Python-3.6.6.tar.xz
+
+添加配置#
+其实就是将Python编译安装至指定目录，这里指定为/usr/lib/python
+./configure --prefix=/usr/lib/python3
+make && make install
+
+
+
+参考
+https://cloud.tencent.com/developer/article/1647605
+
+
+
+
+
