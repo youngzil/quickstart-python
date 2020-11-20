@@ -13,11 +13,11 @@ class Config():
     redis_cluster_dict = {"zfb_sd": sd_nodes, "zfb_sq": sq_nodes}
 
     mysql_config = {
-        'host': '20.26.103.30',
+        'host': '127.0.0.1',
         'port': 3306,
-        'database': 'aifgwtest',
-        'user': 'aiosp_cfg',
-        'password': 'Aiosp_cfg#123',
+        'database': 'test',
+        'user': 'XXXX',
+        'password': 'XXXX#123',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,

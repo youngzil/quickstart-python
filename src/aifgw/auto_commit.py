@@ -26,7 +26,7 @@ def connect_vpn_network():
                     token = click.prompt('请连接SVN或输入VPN口令', type=str, default='Auto')
                     if token and token != 'Auto':
                         vpn_connect_times = 1
-                        os.system(vpn_command + ' -connectwithui sslnj.asiainfo.com 443 zhuanghd ' + token + ' 0 0 0 0 > /dev/null 2>&1 &')
+                        os.system(vpn_command + ' -connectwithui sslnj.vpn地址.com 443 myAccount ' + token + ' 0 0 0 0 > /dev/null 2>&1 &')
             else:
                 connect_ok = True
                 click.echo('VPN已连接成功.')

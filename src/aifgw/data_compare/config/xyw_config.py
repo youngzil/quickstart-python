@@ -15,9 +15,9 @@ class Config():
     mysql_config = {
         'host': '20.26.103.29',
         'port': 3306,
-        'database': 'aifgwtest',
-        'user': 'aiosp_cfg',
-        'password': 'Aiosp_cfg#123',
+        'database': 'test',
+        'user': 'XXX',
+        'password': 'XXX',
         'charset': 'utf8',
         'use_unicode': True,
         'get_warnings': True,

@@ -1,5 +1,11 @@
+- [Python介绍](#Python介绍)
+- [运行Python有三种方式可以运行Python](#运行Python有三种方式可以运行Python)
+- [](#)
+- [](#)
+- [](#)
+- [](#)
+
 Python官网和教程
-运行Python有三种方式可以运行Python
 Python: 创建空的list,以及append用法
 Python将多个list合并为1个list
 Python 列表(List) 的三种遍历(序号和值)方法
@@ -14,10 +20,15 @@ https://www.runoob.com/python3/python3-reg-expressions.html
 
 
 ---------------------------------------------------------------------------------------------------------------------
-Python官网和教程
+## Python介绍
 
-https://www.python.org/
-https://www.python.org/doc/
+
+[Python官网](https://www.python.org/)  
+[Python文档](https://www.python.org/doc/)  
+
+Python is a programming language that lets you work quickly and integrate systems more effectively.  
+Python是一种编程语言，可让您快速工作 并更有效地集成系统。
+
 
 
 教程链接
@@ -54,7 +65,7 @@ https://www.cnblogs.com/xyao1/p/11022127.html
 
 
 ---------------------------------------------------------------------------------------------------------------------
-运行Python有三种方式可以运行Python：
+## 运行Python有三种方式可以运行Python
 
 1、交互式解释器：
 命令行窗口输入python
