@@ -39,7 +39,7 @@ https://docs.python.org/zh-cn/3/installing/index.html
 
 
 ---------------------------------------------------------------------------------------------------------------------
-3、pip：参考python使用pip管理依赖.md
+3、pip：[参考python使用pip管理依赖](python使用pip管理依赖.md)
 
 
 Python3依赖管理
